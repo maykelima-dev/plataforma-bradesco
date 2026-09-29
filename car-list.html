@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Veículos Bradesco - Desmobilização de Frotas</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#CC092F",
+            "primary-bradesco": "#CC092F",
+            "primary-dark": "#85001C",
+            "primary-container": "#B00024",
+            surface: "#F8FAFC",
+            "surface-container": "#F1F5F9",
+            "surface-container-lowest": "#FFFFFF",
+            "on-surface": "#0F172A",
+            secondary: "#475569"
+          },
+          fontFamily: {
+            sans: ["Inter", "Hanken Grotesk", "sans-serif"],
+            manrope: ["Manrope", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #F8FAFC;
+        color: #0F172A;
+      }
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      appearance: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: #CC092F;
+      cursor: pointer;
+      border: 2px solid #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] font-sans text-slate-900 antialiased min-h-screen flex flex-col">
+<!-- 1. HEADER BRADESCO PADRÃO OFICIAL (60-64px) -->
+<header class="fixed top-0 right-0 left-0 h-16 z-50 px-4 md:px-8 flex items-center justify-between shadow-sm text-white select-none bg-[#CC092F]">
+<div class="flex items-center gap-4">
+<a class="flex items-center focus:outline-none" href="#">
+<img alt="Bradesco" class="h-6 md:h-7 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyhSuXSRlK3dWJpUIKMMRuFwZE1b-jGPGby81Tz-Cxu6dCuV-NoyDFX9S3w7g3q6zsWmiGvJWrgWGZad0JKK-qxoX9jra5uHYVM_ud9FwSqiE7tTE3BhT1Uv0d7I-PoWVPHDhguvo5ZM4b06qgOikcHBX3eMBl9z_YjNb80KO3EvcP7wYwerKjAiW3qlCks1U5-6tR_0djO0_xWwYOFmSmN5MYoNCAXzTt5xrqMp106vMxKDm4K7S1SgPIxvF1YEaSsJc">
+</a>
+</div>
+<div class="flex items-center gap-6 md:gap-8">
+<nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium text-white/95">
+<a class="hover:text-white transition-colors py-1 hover:border-b-2 hover:border-white font-medium" href="#">Comprar</a>
+<a class="hover:text-white transition-colors py-1 hover:border-b-2 hover:border-white font-medium" href="#">Frete</a>
+<a class="hover:text-white transition-colors py-1 hover:border-b-2 hover:border-white font-medium" href="#">Fale Conosco</a>
+<a class="hover:text-white transition-colors py-1 hover:border-b-2 hover:border-white font-medium" href="#">Minhas Compras</a>
+</nav>
+<a class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-white/40 bg-white/10 hover:bg-white/20 transition-all text-xs md:text-sm font-medium text-white shadow-xs" href="#">
+<span class="material-symbols-outlined text-[18px]">person</span>
+<span class="">Minha Conta</span>
+</a>
+</div>
+</header>
+<!-- Espaçador do topo fixo (64px) -->
+<div class="pt-16"></div>
+<!-- 2. SUB-HEADER / BREADCRUMB & STATUS SEGURO -->
+<div class="bg-white border-b border-slate-200 px-4 md:px-8 py-3">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-xs text-slate-500 font-medium">
+<a class="hover:text-slate-800 transition-colors" href="#">Início</a>
+<span class="text-slate-300">/</span>
+<a class="hover:text-slate-800 transition-colors" href="#">Plataforma</a>
+<span class="text-slate-300">/</span>
+<a class="hover:text-slate-800 transition-colors" href="#">Veículos Bradesco</a>
+<span class="text-slate-300">/</span>
+<span class="text-slate-900 font-semibold">Oportunidades</span>
+</div>
+
+</div>
+</div>
+<!-- CONTEÚDO PRINCIPAL (SEM HERO BANNER) -->
+<main class="flex-1 max-w-7xl w-full mx-auto px-4 md:px-8 py-6">
+<!-- 3. CABEÇALHO DA SEÇÃO DE VEÍCULOS -->
+<div class="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 pb-5"><div class="">
+<div class="flex items-center gap-3">
+<h1 class="text-3xl md:text-4xl font-extrabold font-manrope tracking-tight text-slate-900">Veículos</h1>
+</div>
+<p class="text-slate-600 font-medium text-base md:text-lg mt-1 max-w-2xl">Confira as opções selecionadas especialmente pra você, funcionário</p>
+</div>
+</div>
+<!-- 4. BUSCA E FILTROS RÁPIDOS -->
+<section class="bg-white rounded-xl p-4 md:p-5 border border-slate-200 shadow-xs mb-6">
+<div class="gap-3.5 flex flex-col md:flex-row"><!-- Campo Busca Principal -->
+<div class="flex-1 relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xl pointer-events-none">search</span>
+<input class="w-full pl-10 pr-3 py-2.5 text-sm bg-slate-50 hover:bg-slate-100/80 focus:bg-white border border-slate-200 rounded-lg focus:ring-2 focus:ring-[#CC092F] focus:border-[#CC092F] outline-none transition-all placeholder:text-slate-400 text-slate-800" placeholder="Busque por marca, modelo ou palavra-chave..." type="text">
+</div>
+<!-- Botão Filtrar -->
+<div class="w-full md:w-auto">
+<button class="w-full h-full min-h-[42px] px-6 bg-[#CC092F] hover:bg-[#B00024] active:bg-[#85001C] text-white text-xs md:text-sm font-bold tracking-wide rounded-lg flex items-center justify-center gap-2 shadow-xs hover:shadow transition-all uppercase whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+          FILTRAR VEÍCULOS
+        </button>
+</div></div>
+</section>
+<!-- 5. FILTROS ATIVOS E ORDENAÇÃO -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 bg-slate-100/80 p-3 rounded-lg border border-slate-200">
+<div class="flex flex-wrap items-center gap-2">
+<span class="text-xs font-semibold text-slate-500 mr-1">Filtros ativos:</span>
+<span class="inline-flex items-center gap-1.5 bg-white border border-slate-300 px-2.5 py-1 rounded-md text-xs font-medium text-slate-700 shadow-2xs">
+        SUV <button class="hover:text-red-700 text-slate-400 font-bold ml-0.5">×</button>
+</span>
+<span class="inline-flex items-center gap-1.5 bg-white border border-slate-300 px-2.5 py-1 rounded-md text-xs font-medium text-slate-700 shadow-2xs">
+        Automático <button class="hover:text-red-700 text-slate-400 font-bold ml-0.5">×</button>
+</span>
+<span class="inline-flex items-center gap-1.5 bg-white border border-slate-300 px-2.5 py-1 rounded-md text-xs font-medium text-slate-700 shadow-2xs">
+        São Paulo <button class="hover:text-red-700 text-slate-400 font-bold ml-0.5">×</button>
+</span>
+<span class="inline-flex items-center gap-1.5 bg-white border border-slate-300 px-2.5 py-1 rounded-md text-xs font-medium text-slate-700 shadow-2xs">
+        Menos de 45.000 km <button class="hover:text-red-700 text-slate-400 font-bold ml-0.5">×</button>
+</span>
+<button class="text-xs text-[#CC092F] hover:text-[#85001C] font-semibold underline ml-1">
+        Limpar todos
+      </button>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-auto">
+<span class="text-xs font-medium text-slate-500 hidden md:inline">112 veículos encontrados</span>
+<span class="text-slate-300 hidden md:inline">•</span>
+<div class="flex items-center gap-2">
+<label class="text-xs text-slate-600 font-medium whitespace-nowrap" for="sort">Ordenar por:</label>
+<select class="text-xs py-1.5 pl-2.5 pr-7 bg-white border border-slate-300 rounded-md focus:ring-1 focus:ring-[#CC092F] outline-none text-slate-800 font-medium cursor-pointer shadow-2xs" id="sort">
+<option>Mais relevantes</option>
+<option>Menor preço</option>
+<option>Maior desconto FIPE</option>
+<option>Menor quilometragem</option>
+<option>Ano mais recente</option>
+</select>
+</div>
+</div>
+</div>
+<!-- 6. ÁREA OPERACIONAL COM SIDEBAR + GRID DE VEÍCULOS -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- SIDEBAR DE FILTROS REFINADOS (COL 3) -->
+<aside class="lg:col-span-3 flex flex-col gap-5"><div class="bg-white rounded-xl border border-slate-200 shadow-xs divide-y divide-slate-100 overflow-hidden"><div class="p-3.5 bg-slate-50/60 flex items-center justify-between border-b border-slate-100"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[#CC092F] text-[18px]">tune</span><span class="text-xs font-bold text-slate-900 font-manrope tracking-tight uppercase">Refinar Busca</span></div><button type="button" class="text-[11px] font-semibold text-slate-400 hover:text-[#CC092F] transition-colors">Resetar</button></div><div class="p-3 bg-white"><div class="text-[11px] font-semibold text-slate-500 mb-2 flex items-center justify-between"><span class="">Filtros Ativos</span><span class="text-[10px] font-bold text-[#CC092F] bg-red-50 px-1.5 py-0.5 rounded-full">3</span></div><div class="flex flex-wrap gap-1.5"><span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-md text-[11px] font-medium text-slate-700">Carros <button type="button" class="text-slate-400 hover:text-[#CC092F] font-bold text-xs ml-0.5">×</button></span><span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-md text-[11px] font-medium text-slate-700">SUV <button type="button" class="text-slate-400 hover:text-[#CC092F] font-bold text-xs ml-0.5">×</button></span><span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-md text-[11px] font-medium text-slate-700">São Paulo - SP <button type="button" class="text-slate-400 hover:text-[#CC092F] font-bold text-xs ml-0.5">×</button></span></div></div><div class="py-3 px-3.5"><div class="flex items-center justify-between cursor-pointer group mb-2.5"><span class="text-xs font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2 group-hover:text-[#CC092F] transition-colors"><span class="material-symbols-outlined text-slate-400 group-hover:text-[#CC092F] text-base">layers</span>Categoria</span><span class="material-symbols-outlined text-slate-400 text-sm">expand_less</span></div><div class="grid grid-cols-2 gap-2 text-xs"><label class="flex items-center justify-between p-2 rounded-lg border border-slate-300 bg-white cursor-pointer transition-all"><span class="flex items-center gap-1.5 font-semibold text-slate-900"><input checked="" name="categoria" type="radio" class="text-[#CC092F] focus:ring-[#CC092F] accent-[#CC092F]"><span class="">Carros</span></span><span class="text-[10px] font-bold text-slate-500">104</span></label><label class="flex items-center justify-between p-2 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-all"><span class="flex items-center gap-1.5 font-medium text-slate-700"><input name="categoria" type="radio" class="text-[#CC092F] focus:ring-[#CC092F] accent-[#CC092F]"><span class="">Motos</span></span><span class="text-[10px] font-medium text-slate-400">8</span></label></div></div><div class="py-3 px-3.5"><div class="flex items-center justify-between cursor-pointer group mb-2.5"><span class="text-xs font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2 group-hover:text-[#CC092F] transition-colors"><span class="material-symbols-outlined text-slate-400 group-hover:text-[#CC092F] text-base">directions_car</span>Veículo</span><span class="material-symbols-outlined text-slate-400 text-sm">expand_less</span></div><div class="space-y-2 text-xs"><div><label class="block text-[11px] font-medium text-slate-500 mb-1">Marca / Montadora</label><select class="w-full text-xs py-1.5 px-2.5 bg-slate-50 border border-slate-200 rounded-md focus:bg-white focus:ring-1 focus:ring-[#CC092F] outline-none text-slate-800 font-medium cursor-pointer"><option>Todas as marcas</option><option selected="">Jeep</option><option>Toyota</option><option>Fiat</option><option>Honda</option><option>Volkswagen</option><option>Hyundai</option></select></div><div><label class="block text-[11px] font-medium text-slate-500 mb-1">Modelo</label><select class="w-full text-xs py-1.5 px-2.5 bg-slate-50 border border-slate-200 rounded-md focus:bg-white focus:ring-1 focus:ring-[#CC092F] outline-none text-slate-800 font-medium cursor-pointer"><option>Todos os modelos</option><option>Compass</option><option>Corolla</option><option>Toro</option><option>HR-V</option><option>T-Cross</option><option>Creta</option></select></div><div class="grid grid-cols-2 gap-2"><div><label class="block text-[10px] font-medium text-slate-500 mb-1">Ano De</label><select class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md focus:bg-white focus:ring-1 focus:ring-[#CC092F] outline-none text-slate-800 font-medium cursor-pointer"><option>2018</option><option>2020</option><option selected="">2022</option><option>2023</option></select></div><div><label class="block text-[10px] font-medium text-slate-500 mb-1">Ano Até</label><select class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md focus:bg-white focus:ring-1 focus:ring-[#CC092F] outline-none text-slate-800 font-medium cursor-pointer"><option>2024</option><option selected="">2026</option></select></div></div></div></div><div class="py-3 px-3.5"><div class="flex items-center justify-between cursor-pointer group"><span class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-2 group-hover:text-[#CC092F] transition-colors"><span class="material-symbols-outlined text-slate-400 group-hover:text-[#CC092F] text-base">payments</span>Oferta / Preço</span><span class="material-symbols-outlined text-slate-400 text-sm">expand_more</span></div><div class="space-y-2 mt-2.5"><div class="grid grid-cols-2 gap-2 text-xs"><div><span class="text-[10px] text-slate-500 font-medium block mb-1">Mínimo</span><input type="text" value="R$ 60.000" class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md font-semibold text-slate-700 outline-none focus:bg-white focus:ring-1 focus:ring-[#CC092F]"></div><div><span class="text-[10px] text-slate-500 font-medium block mb-1">Máximo</span><input type="text" value="R$ 180.000" class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md font-semibold text-slate-700 outline-none focus:bg-white focus:ring-1 focus:ring-[#CC092F]"></div></div><input class="w-full accent-[#CC092F] cursor-pointer" max="250000" min="40000" type="range" value="180000"></div></div><div class="py-3 px-3.5"><div class="flex items-center justify-between cursor-pointer group"><span class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-2 group-hover:text-[#CC092F] transition-colors"><span class="material-symbols-outlined text-slate-400 group-hover:text-[#CC092F] text-base">speed</span>Quilometragem</span><span class="material-symbols-outlined text-slate-400 text-sm">expand_more</span></div><div class="space-y-2 mt-2.5"><div class="grid grid-cols-2 gap-2 text-xs"><div><span class="text-[10px] text-slate-500 font-medium block mb-1">Km Mín</span><input type="text" placeholder="0 km" class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md font-medium text-slate-700 outline-none focus:bg-white focus:ring-1 focus:ring-[#CC092F]"></div><div><span class="text-[10px] text-slate-500 font-medium block mb-1">Km Máx</span><input type="text" value="45.000 km" class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md font-semibold text-slate-700 outline-none focus:bg-white focus:ring-1 focus:ring-[#CC092F]"></div></div></div></div><div class="py-3 px-3.5"><div class="flex items-center justify-between cursor-pointer group"><span class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-2 group-hover:text-[#CC092F] transition-colors"><span class="material-symbols-outlined text-slate-400 group-hover:text-[#CC092F] text-base">location_on</span>Localização</span><span class="material-symbols-outlined text-slate-400 text-sm">expand_more</span></div><div class="mt-2.5"><select class="w-full text-xs py-1.5 px-2.5 bg-slate-50 border border-slate-200 rounded-md focus:bg-white focus:ring-1 focus:ring-[#CC092F] outline-none text-slate-800 font-medium cursor-pointer"><option selected="">São Paulo - SP</option><option>Rio de Janeiro - RJ</option><option>Minas Gerais - MG</option><option>Paraná - PR</option><option>Rio Grande do Sul - RS</option><option>Distrito Federal - DF</option></select></div></div><div class="py-3 px-3.5"><div class="flex items-center justify-between cursor-pointer group"><span class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-2 group-hover:text-[#CC092F] transition-colors"><span class="material-symbols-outlined text-slate-400 group-hover:text-[#CC092F] text-base">tune</span>Características</span><span class="material-symbols-outlined text-slate-400 text-sm">expand_more</span></div><div class="space-y-2 mt-2.5 text-xs"><div class="grid grid-cols-2 gap-2"><div><label class="block text-[10px] font-medium text-slate-500 mb-1">Câmbio</label><select class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md text-slate-700"><option>Selecione ˅</option><option selected="">Automático</option><option>Manual</option></select></div><div><label class="block text-[10px] font-medium text-slate-500 mb-1">Combustível</label><select class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md text-slate-700"><option>Selecione ˅</option><option>Flex</option><option>Gasolina</option><option>Diesel</option><option>Híbrido/Elétrico</option></select></div></div><div class="grid grid-cols-2 gap-2"><div><label class="block text-[10px] font-medium text-slate-500 mb-1">Cor</label><select class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md text-slate-700"><option>Selecione ˅</option><option>Branco</option><option>Preto</option><option>Prata / Cinza</option><option>Outras</option></select></div><div><label class="block text-[10px] font-medium text-slate-500 mb-1">Ar Condicionado</label><select class="w-full text-xs py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-md text-slate-700"><option value="">Selecione ˅</option><option value="sim">Sim</option><option value="nao">Não</option></select></div></div></div></div><div class="p-3.5 bg-slate-50/60 border-t border-slate-100 flex flex-col gap-2"><button type="button" class="w-full py-2.5 bg-[#CC092F] hover:bg-[#B00024] active:bg-[#85001C] text-white font-bold text-xs rounded-lg uppercase tracking-wider transition-colors shadow-xs flex items-center justify-center gap-1.5"><span class="material-symbols-outlined text-[16px]">search</span>APLICAR FILTROS</button><button type="button" class="w-full py-2 border border-slate-200 hover:bg-slate-100/80 text-slate-600 font-semibold text-xs rounded-lg uppercase tracking-wider transition-colors">LIMPAR FILTROS</button></div></div></aside>
+<!-- GRID DE VEÍCULOS (COL 9 - 3 CARDS POR LINHA) -->
+<section class="lg:col-span-9 flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5"><!-- CARD 1: Jeep Compass -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group h-full"><div class="flex flex-col flex-1"><div class="relative h-48 bg-slate-100 overflow-hidden rounded-t-xl"><img alt="Jeep Compass Longitude" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoj0PkjyJRF97RyOk9rTvPxKt7-PVd7hwk9sH_iFp_2-LCBup8aJHB1x3hTDxBbwagF1Ljb4Qy2sxEy2C4He1c_KBpL7AD2mxyxx7JRPko2-pxD97S2X0vEByyf94gSHkB3GTlzJ-OGCYWJyUhH56UJP7HbF0uFNhD-oKrHfgNAf9PeiJ3ohsaSxRevve-p5XA2hzDbPlmMTzokApZO0tpF2yXCeOJVJrhMrqQf3q5m266lOYTlMouZg"><div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-10"><span class="bg-emerald-50/95 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs tracking-wider uppercase backdrop-blur-xs">Disponível</span></div><button aria-label="Favoritar" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-[#CC092F] flex items-center justify-center transition-colors shadow-xs z-10"><span class="material-symbols-outlined text-[18px]">favorite_border</span></button></div><div class="p-4 flex flex-col flex-1"><h3 class="font-manrope font-bold text-slate-900 text-[17px] leading-snug group-hover:text-[#CC092F] transition-colors">Jeep Compass Longitude 1.3 Turbo Flex</h3><div class="grid grid-cols-2 gap-2 p-2.5 my-3 bg-slate-50 rounded-lg border border-slate-200/80 text-xs"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">calendar_today</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Data</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">09/09/2026</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">schedule</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Prazo Final</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">0 dias, 2h</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">gavel</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Oferta</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">0</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">sell</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Anúncio</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">1</div></div></div></div><div class="flex items-center gap-1 text-[11px] text-slate-500 font-medium mb-3"><span class="material-symbols-outlined text-slate-400 text-[14px]">location_on</span><span class="">SÃO PAULO - SP</span></div><div class="mt-auto pt-2 border-t border-slate-100"><div class="flex items-baseline justify-between gap-2 flex-wrap"><div><span class="text-xs text-slate-500 font-medium block">Oferta inicial</span><span class="text-[22px] font-extrabold text-slate-900 font-manrope">R$ 136.500</span></div></div></div></div></div><div class="p-4 pt-0"><a class="w-full h-11 bg-[#CC092F] hover:bg-[#B00024] active:bg-[#85001C] text-white font-semibold text-sm rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-xs" href="#">VER VEÍCULO</a></div></div>
+
+<!-- CARD 2: Fiat Toro Freedom -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group h-full"><div class="flex flex-col flex-1"><div class="relative h-48 bg-slate-100 overflow-hidden rounded-t-xl"><img alt="Fiat Toro Freedom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxt65vv4-Irfw1ymJVCph5Wqx2m3duhAC8iWXck12HJIu3JgEiEon3P3TkvhwzXYkpio34GhZ7ADxj2_gEMynz_wcd2-a5-0gBxUuCEGRyyD3JCdEITYe38j4TCUtZww_D6oczib92wW31XMuqnXbnFGGZ_Gz_LeCSdtEkBVpB7ytuLhAcjlnIiHLusYfVAtPDfIpIffGvXbC4VeoBvSLFCR0JyccjsVFEZNchCo8Ze7-O4WKkhItGWw"><div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-10"><span class="bg-emerald-50/95 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs tracking-wider uppercase backdrop-blur-xs">Disponível</span></div><button aria-label="Favoritar" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-[#CC092F] flex items-center justify-center transition-colors shadow-xs z-10"><span class="material-symbols-outlined text-[18px]">favorite_border</span></button></div><div class="p-4 flex flex-col flex-1"><h3 class="font-manrope font-bold text-slate-900 text-[17px] leading-snug group-hover:text-[#CC092F] transition-colors">Fiat Toro Freedom 1.3 Turbo Flex AT6</h3><div class="grid grid-cols-2 gap-2 p-2.5 my-3 bg-slate-50 rounded-lg border border-slate-200/80 text-xs"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">calendar_today</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Data</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">09/09/2026</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">schedule</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Prazo Final</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">1 dia, 4h</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">gavel</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Oferta</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">2</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">sell</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Anúncio</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">2</div></div></div></div><div class="flex items-center gap-1 text-[11px] text-slate-500 font-medium mb-3"><span class="material-symbols-outlined text-slate-400 text-[14px]">location_on</span><span class="">SÃO PAULO - SP</span></div><div class="mt-auto pt-2 border-t border-slate-100"><div class="flex items-baseline justify-between gap-2 flex-wrap"><div><span class="text-xs text-slate-500 font-medium block">Oferta atual</span><span class="text-[22px] font-extrabold text-slate-900 font-manrope">R$ 104.900</span></div></div></div></div></div><div class="p-4 pt-0"><a class="w-full h-11 bg-[#CC092F] hover:bg-[#B00024] active:bg-[#85001C] text-white font-semibold text-sm rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-xs" href="#">VER VEÍCULO</a></div></div>
+
+<!-- CARD 3: Toyota Corolla XEi -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group h-full"><div class="flex flex-col flex-1"><div class="relative h-48 bg-slate-100 overflow-hidden rounded-t-xl"><img alt="Toyota Corolla XEi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9xMvE37vXPZKvITApqEWgmLtcwhcHvnX3MlhRGZNWxbcXg5ihtmtzHMDhWr1DIezE55OXbO_K2kIT5ILz-pSLnId0GA1UwOW_vUxt6_LFtyji4iuVA7TNi5cbBq_LSB3qWK2eJwah86AW2MS8kAUyiKmlNA0bJPYtL0ZOssx_6r-Sc125pu6A5z0ZSR4ziwKTcmmb_1cCuzyfNdzpkjhrI1Rl5hEqlSIKopBaKL5ArroC44eF3-KcuA"><div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-10"><span class="bg-emerald-50/95 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs tracking-wider uppercase backdrop-blur-xs">Disponível</span></div><button aria-label="Favoritar" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-[#CC092F] flex items-center justify-center transition-colors shadow-xs z-10"><span class="material-symbols-outlined text-[18px]">favorite_border</span></button></div><div class="p-4 flex flex-col flex-1"><h3 class="font-manrope font-bold text-slate-900 text-[17px] leading-snug group-hover:text-[#CC092F] transition-colors">Toyota Corolla XEi 2.0 Dynamic Force</h3><div class="grid grid-cols-2 gap-2 p-2.5 my-3 bg-slate-50 rounded-lg border border-slate-200/80 text-xs"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">calendar_today</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Data</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">09/09/2026</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">schedule</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Prazo Final</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">0 dias, 6h</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">gavel</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Oferta</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">1</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">sell</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Anúncio</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">3</div></div></div></div><div class="flex items-center gap-1 text-[11px] text-slate-500 font-medium mb-3"><span class="material-symbols-outlined text-slate-400 text-[14px]">location_on</span><span class="">SÃO PAULO - SP</span></div><div class="mt-auto pt-2 border-t border-slate-100"><div class="flex items-baseline justify-between gap-2 flex-wrap"><div><span class="text-xs text-slate-500 font-medium block">Oferta atual</span><span class="text-[22px] font-extrabold text-slate-900 font-manrope">R$ 126.000</span></div></div></div></div></div><div class="p-4 pt-0"><a class="w-full h-11 bg-[#CC092F] hover:bg-[#B00024] active:bg-[#85001C] text-white font-semibold text-sm rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-xs" href="#">VER VEÍCULO</a></div></div>
+
+<!-- CARD 4: Honda HR-V Advance -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group h-full"><div class="flex flex-col flex-1"><div class="relative h-48 bg-slate-100 overflow-hidden rounded-t-xl"><img alt="Honda HR-V Advance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV__mxk-7k8zFCYnK4-kkU6kN4sB-JwOMwriGyiKPwbZ8Ym4LxYFXOY--4b-teG0Yf0A_vojTMJWt8b3zpZxAeRYKDw5trtLftd0lZNeH1T4NLlSLb1iW2ccFiV1NzAeogTou3w2JT8fBpB4t7VC7eBkw363EFdHppYCmSexjSXKcmX84NmqNFJxw7F-7fxqXAARAG-IUgAJ46OL_JfAlW9FIsR2vK3cwEyyJpRq01KlvnMiSbRdWvkA"><div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-10"><span class="bg-red-50/95 text-[#CC092F] border border-red-200 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs tracking-wider uppercase backdrop-blur-xs">Oferta Especial</span></div><button aria-label="Favoritar" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-[#CC092F] flex items-center justify-center transition-colors shadow-xs z-10"><span class="material-symbols-outlined text-[18px]">favorite_border</span></button></div><div class="p-4 flex flex-col flex-1"><h3 class="font-manrope font-bold text-slate-900 text-[17px] leading-snug group-hover:text-[#CC092F] transition-colors">Honda HR-V Advance 1.5 Turbo Flex CVT</h3><div class="grid grid-cols-2 gap-2 p-2.5 my-3 bg-slate-50 rounded-lg border border-slate-200/80 text-xs"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">calendar_today</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Data</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">09/09/2026</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">schedule</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Prazo Final</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">0 dias, 1h</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">gavel</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Oferta</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">5</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">sell</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Anúncio</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">4</div></div></div></div><div class="flex items-center gap-1 text-[11px] text-slate-500 font-medium mb-3"><span class="material-symbols-outlined text-slate-400 text-[14px]">location_on</span><span class="">SÃO PAULO - SP</span></div><div class="mt-auto pt-2 border-t border-slate-100"><div class="flex items-baseline justify-between gap-2 flex-wrap"><div><span class="text-xs text-slate-500 font-medium block">Oferta atual</span><span class="text-[22px] font-extrabold text-slate-900 font-manrope">R$ 148.000</span></div></div></div></div></div><div class="p-4 pt-0"><a class="w-full h-11 bg-[#CC092F] hover:bg-[#B00024] active:bg-[#85001C] text-white font-semibold text-sm rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-xs" href="#">VER VEÍCULO</a></div></div>
+
+<!-- CARD 5: Volkswagen T-Cross Highline -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group h-full"><div class="flex flex-col flex-1"><div class="relative h-48 bg-slate-100 overflow-hidden rounded-t-xl"><img alt="Volkswagen T-Cross" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_6KfZiA_CUOgwbPmSM86wWRKiK_dIazAtj1UYWFCHbiek_UfD4Sf36mNZfHoOKkh--teEGc7UFH9HDhnQzqGgjHXgV5nFfKzXrFIhOlkENXfq8UXdv229IpZZtyPnH-mIqFoWW2ZRdz-rgZF5DoTxtAo-vkTAaSDzGHxuZGWOvKQx0VKBVdaK7t5aqfk9-Oy1k2LSybkrlKI7ANTnx-mzzH3StK4H0XOIlVPetwp6kboWH0TAPiV4cQ"><div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-10"><span class="bg-emerald-50/95 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs tracking-wider uppercase backdrop-blur-xs">Disponível</span></div><button aria-label="Favoritar" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-[#CC092F] flex items-center justify-center transition-colors shadow-xs z-10"><span class="material-symbols-outlined text-[18px]">favorite_border</span></button></div><div class="p-4 flex flex-col flex-1"><h3 class="font-manrope font-bold text-slate-900 text-[17px] leading-snug group-hover:text-[#CC092F] transition-colors">Volkswagen T-Cross Highline 250 TSI</h3><div class="grid grid-cols-2 gap-2 p-2.5 my-3 bg-slate-50 rounded-lg border border-slate-200/80 text-xs"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">calendar_today</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Data</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">09/09/2026</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">schedule</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Prazo Final</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">2 dias, 0h</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">gavel</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Oferta</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">3</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">sell</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Anúncio</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">5</div></div></div></div><div class="flex items-center gap-1 text-[11px] text-slate-500 font-medium mb-3"><span class="material-symbols-outlined text-slate-400 text-[14px]">location_on</span><span class="">SÃO PAULO - SP</span></div><div class="mt-auto pt-2 border-t border-slate-100"><div class="flex items-baseline justify-between gap-2 flex-wrap"><div><span class="text-xs text-slate-500 font-medium block">Oferta atual</span><span class="text-[22px] font-extrabold text-slate-900 font-manrope">R$ 119.500</span></div></div></div></div></div><div class="p-4 pt-0"><a class="w-full h-11 bg-[#CC092F] hover:bg-[#B00024] active:bg-[#85001C] text-white font-semibold text-sm rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-xs" href="#">VER VEÍCULO</a></div></div>
+
+<!-- CARD 6: Hyundai Creta Ultimate -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group h-full"><div class="flex flex-col flex-1"><div class="relative h-48 bg-slate-100 overflow-hidden rounded-t-xl"><img alt="Hyundai Creta Ultimate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEXMQY4D8szXWau_6JOpJpH_oO5dnxGn2gvtF_sCQCJxmVKnzknhrIj75NXq7hLpytqDiY7gDXcPxArudzj7-uqNAwftzIEpop7FR7cf_-LV5gR9Z_5HOo8AxL3uzwwChISO0wil3e7YArCJrXKCQJqqmyZEXlLkjlwTkhNpVp_ZI3RtU02iOiEV3tbiknjAdvfnnoRWEkRLn37m9Os3bJ6f0qsR71zC4Q3g0QeCDX6FCA3fAW_vnJ6A"><div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-10"><span class="bg-emerald-50/95 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs tracking-wider uppercase backdrop-blur-xs">Disponível</span></div><button aria-label="Favoritar" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-[#CC092F] flex items-center justify-center transition-colors shadow-xs z-10"><span class="material-symbols-outlined text-[18px]">favorite_border</span></button></div><div class="p-4 flex flex-col flex-1"><h3 class="font-manrope font-bold text-slate-900 text-[17px] leading-snug group-hover:text-[#CC092F] transition-colors">Hyundai Creta Ultimate 2.0 SmartStream AT</h3><div class="grid grid-cols-2 gap-2 p-2.5 my-3 bg-slate-50 rounded-lg border border-slate-200/80 text-xs"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">calendar_today</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Data</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">09/09/2026</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">schedule</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Prazo Final</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">3 dias, 5h</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">gavel</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Oferta</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">0</div></div></div><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-slate-400 text-[15px]">sell</span><div><div class="text-[10px] uppercase text-slate-500 font-medium leading-none">Anúncio</div><div class="font-semibold text-slate-800 text-[12px] mt-0.5">6</div></div></div></div><div class="flex items-center gap-1 text-[11px] text-slate-500 font-medium mb-3"><span class="material-symbols-outlined text-slate-400 text-[14px]">location_on</span><span class="">SÃO PAULO - SP</span></div><div class="mt-auto pt-2 border-t border-slate-100"><div class="flex items-baseline justify-between gap-2 flex-wrap"><div><span class="text-xs text-slate-500 font-medium block">Oferta inicial</span><span class="text-[22px] font-extrabold text-slate-900 font-manrope">R$ 134.000</span></div></div></div></div></div><div class="p-4 pt-0"><a class="w-full h-11 bg-[#CC092F] hover:bg-[#B00024] active:bg-[#85001C] text-white font-semibold text-sm rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-xs" href="#">VER VEÍCULO</a></div></div></div>
+<!-- 7. PAGINAÇÃO CENTRALIZADA -->
+<div class="bg-white rounded-xl border border-slate-200 p-4 mt-2 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
+<div class="text-xs text-slate-600 font-medium">
+          Mostrando <span class="font-bold text-slate-800">1 - 6</span> de <span class="font-bold text-slate-800">112</span> veículos disponíveis
+        </div>
+<div class="flex items-center gap-1.5 text-xs font-semibold">
+<button class="px-3 py-1.5 border border-slate-300 text-slate-500 hover:bg-slate-50 rounded-md disabled:opacity-40" disabled="">
+            Anterior
+          </button>
+<button class="w-8 h-8 rounded-md bg-[#CC092F] text-white flex items-center justify-center font-bold">
+            1
+          </button>
+<button class="w-8 h-8 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 flex items-center justify-center">
+            2
+          </button>
+<button class="w-8 h-8 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 flex items-center justify-center">
+            3
+          </button>
+<button class="w-8 h-8 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 flex items-center justify-center">
+            4
+          </button>
+<span class="px-1 text-slate-400">...</span>
+<button class="w-8 h-8 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 flex items-center justify-center">
+            12
+          </button>
+<button class="px-3 py-1.5 border border-slate-300 text-slate-700 hover:bg-slate-50 rounded-md">
+            Próximo
+          </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- 8. FOOTER CORPORATIVO COMPLETO (CARBUY PLATAFORMA + BRADESCO) -->
+<footer class="bg-[#0B111E] text-slate-300 mt-16 pt-12 pb-8 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800/80">
+      <div class="flex items-center gap-4">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBURGHkhK5l27waYIaQ7HHSIPdlit-l1zkSv3rJb3x7_pV_ZrwZTJSkyYHHltW4VTY7ck8S_GA5uzZw0rw7fiRtiW_NRNBU-lsxwU_IGeIKYVYQdkEKDeaA-v04ISQiT4ojkA56jSTBcWZsuo9LTVdGLXGp85FE-k_ZYfQu_rlmA3eejYSL0c3sOvduIqJTfVWjTSq4JJxFBE7vbKKd1LTe8vwaXUV_UIrclqfW_wPjjSNj7Fzl2-IoPTb6CC7bqMwDeTE" alt="CarBuy" class="h-7 w-auto object-contain">
+        <span class="text-slate-600 font-light">|</span>
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaggK78zNB3gthRSekgklYLCECUJqqye_cfyHD94wuZhAwalsPOTog7EHPd0DVZIJ2YR90xWw5qnPlXfEghgdN43jYUvMO0GTwSVensFTsc4qKl2oFOvGawaKqO1cwUBiGWd8DTLtx-olw0Iuh2005Y5U1pDUZHRWVek3Zf4LtjOkqF3ilQDZiheKIlK-Y0NKf0vjuIlqqAeb6q7ByTvX1wwiiZT62v1al6EtCiowpXOHF_LtL4C06_77H6fOyrc9QNtA" alt="Bradesco" class="h-6 w-auto object-contain brightness-0 invert">
+      </div>
+      <nav class="flex flex-wrap items-center gap-6 text-xs text-slate-400 font-medium">
+        <a href="#" class="hover:text-white transition-colors">Perguntas Frequentes</a>
+        <a href="#" class="hover:text-white transition-colors">Privacidade</a>
+        <a href="#" class="hover:text-white transition-colors">LGPD</a>
+        <a href="#" class="hover:text-white transition-colors">Contato</a>
+      </nav>
+    </div>
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+      <div class="">
+        © 2026 Carbuy &amp; Banco Bradesco S.A. Todos os direitos reservados.
+      </div>
+      <div class="text-slate-400 flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-[13px] text-emerald-500">lock</span>
+        Ambiente seguro e auditado para colaboradores e credenciados.
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="fixed bottom-6 right-6 z-50">
+  <a href="#" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs px-4 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all">
+    <span class="material-symbols-outlined text-lg">chat</span>
+    <span class="tracking-wide">DÚVIDAS? <span class="font-normal opacity-90">Fale conosco</span></span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

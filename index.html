@@ -1,0 +1,288 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              red: '#B00024',
+              ruby: '#CC092F',
+              hover: '#8F0718',
+              dark: '#171717',
+              gray: '#F8F9FA',
+              border: '#E5E7EB'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: #171717;
+        background-color: #F8F9FA;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#F8F9FA] text-[#171717] antialiased">
+<!-- 2. HEADER REFINADO -->
+<header class="sticky top-0 z-50 w-full bg-[#CC092F] shadow-sm text-white" style="background: #CC092F !important;">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12 h-[72px] flex items-center justify-between">
+<a aria-label="Bradesco Home" class="flex items-center focus:outline-none" href="#">
+<img alt="Bradesco" class="h-7 w-auto block object-contain brightness-0 invert select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdglPZ2Fw-vV8P808YUouPST9NCJPpGLvR6Bj5sRdo9doPj6Yp7Lh2DIwVCBAUAgo_i0K6ykx_iC1TfgaERAuiK4QiqTRt4SypEJllisM5wSWLEU8abeYb0hFdPOJ7VN3HHkHwd8tuJpmtN6WcgjdTJEOJeMsxden-Z0TVxxAH9EZOiD3sf-pWO-9gQB3TkO9zDf9MdQTueOAu49xuwNEM5iU1xPjTKIu5pVaBawid7wY16yrWNwH9WrSkGgwEG2fqNvU" style="filter: brightness(0) invert(1);">
+</a>
+<nav class="flex items-center gap-6 sm:gap-8">
+<a class="text-white/90 hover:text-white font-medium text-[14px] transition-colors hover:underline hidden sm:block" href="#como-funciona">Como participar</a>
+<a class="text-white/90 hover:text-white font-medium text-[14px] transition-colors hover:underline hidden sm:block" href="#login-section">Cadastre-se</a>
+<a class="inline-flex items-center justify-center h-[40px] px-6 rounded-[8px] bg-white text-[#CC092F] font-bold text-[14px] tracking-normal shadow-sm hover:bg-[#F8FAFC] active:scale-[0.98] transition-all" href="#login-section">Login</a>
+</nav>
+</div>
+</header>
+<main class="w-full flex flex-col items-center">
+<!-- 3. HERO BANNER FULL WIDTH -->
+<section class="w-full bg-white"><img alt="Oportunidades Exclusivas para você - Bradesco Carros Motos Imóveis" class="w-full h-auto block select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2NaWp0n6EyFRsSHIBeh4vmUnfDpu-tg77xpA389uvlJsJ44eJOgXkQ-562WeoFNWz5M7lkx5kIEv29yq0-908J9FwCaHRCxRzhNdJxiei1CIa3kjCCPU7IQ_XAuVNhEKB7T1ck6gqrA3_t_ggWMBEgKmkiRoh7mjG_sIwJX4FKd1RPZr7ExiNiaW6C1kySpm21TxddgaM6l5xLJOI4qY0Vc8KWCAKUgyur61fjQFhWi8UyqqWovTauosMv75_EXuwjkk"></section>
+<!-- 4. ÁREA DE LOGIN (CONTAINER HORIZONTAL COMPACTO & ELEGANTE) -->
+<section class="w-full py-8 bg-[#F8F9FA]" id="login-section"><div class="max-w-[1080px] mx-auto px-4 sm:px-6">
+<div class="w-full bg-white rounded-xl border border-slate-200 p-6 lg:p-7 shadow-[0_4px_20px_rgba(0,0,0,0.04)] flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+<!-- Lado esquerdo (bloco informativo Bradesco) -->
+<div class="flex flex-col justify-center shrink-0 lg:w-[260px] border-b lg:border-b-0 lg:border-r border-slate-200 pb-5 lg:pb-0 lg:pr-6">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="material-symbols-outlined text-[#CC092F] text-[20px]">lock</span>
+<h2 class="text-[18px] font-bold text-[#171717] tracking-tight leading-snug">Acesse sua conta</h2>
+</div>
+<p class="text-[13px] text-[#666666] leading-relaxed mb-3">
+        Acesse oportunidades exclusivas e acompanhe suas compras.
+      </p>
+<div class="flex items-center gap-1.5 text-[12px] text-[#16A34A] font-medium">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="">Ambiente protegido e seguro.</span>
+</div>
+</div>
+<!-- Lado direito (inputs minimalistas e botão Bradesco #CC092F) -->
+<form class="flex-1 flex flex-col justify-center gap-2.5" onsubmit="event.preventDefault();">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-end">
+<!-- E-mail -->
+<div class="md:col-span-5 flex flex-col">
+<label class="text-[12px] font-semibold text-[#333333] mb-1.5" for="email">E-mail</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[#9CA3AF] text-[18px] pointer-events-none">mail</span>
+<input class="w-full h-[44px] pl-9 pr-3 rounded-[8px] border border-slate-200 bg-white text-[13px] text-[#171717] placeholder:text-[#A3A3A3] focus:outline-none focus:border-[#CC092F] focus:ring-2 focus:ring-[#CC092F]/15 transition-all" id="email" placeholder="Digite seu e-mail" required="" type="email">
+</div>
+</div>
+<!-- Senha -->
+<div class="md:col-span-4 flex flex-col">
+<label class="text-[12px] font-semibold text-[#333333] mb-1.5" for="senha">Senha</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[#9CA3AF] text-[18px] pointer-events-none">lock</span>
+<input class="w-full h-[44px] pl-9 pr-9 rounded-[8px] border border-slate-200 bg-white text-[13px] text-[#171717] placeholder:text-[#A3A3A3] focus:outline-none focus:border-[#CC092F] focus:ring-2 focus:ring-[#CC092F]/15 transition-all" id="senha" placeholder="••••••••••••" required="" type="password">
+<button aria-label="Mostrar senha" class="absolute right-3 text-[#9CA3AF] hover:text-[#525252] focus:outline-none flex items-center" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Botão Entrar -->
+<div class="md:col-span-3 flex flex-col justify-end">
+<button class="w-full h-[44px] rounded-[8px] bg-[#CC092F] hover:bg-[#8F0718] active:scale-[0.98] text-white font-bold text-[14px] tracking-wide transition-all flex items-center justify-center gap-1.5 shadow-sm" type="submit"><span class="">ENTRAR</span></button>
+</div>
+</div>
+<!-- Links de apoio -->
+<div class="flex flex-wrap items-center justify-between pt-0.5 text-[12px] text-[#666666] gap-2">
+<a class="hover:text-[#CC092F] transition-colors underline-offset-2 hover:underline" href="#">
+          Esqueceu sua senha?
+        </a>
+<p class="text-[#666666]">
+          Ainda não possui cadastro? 
+          <a class="text-[#CC092F] font-semibold hover:underline ml-1" href="#">Cadastre-se</a>
+</p>
+</div>
+</form>
+</div>
+</div></section>
+<!-- 5. SEÇÃO DE BOAS-VINDAS -->
+<section class="w-full mt-12 mb-8 bg-transparent">
+<div class="max-w-[1040px] mx-auto px-6 text-center">
+<span class="text-[12px] font-semibold uppercase tracking-wider text-[#B00024] mb-2 block">BEM-VINDO AO</span>
+<h2 class="text-[26px] font-bold tracking-tight text-[#171717] leading-tight mb-3">Evento de oportunidades exclusivas do Bradesco</h2>
+<p class="text-[15px] text-[#666666] max-w-2xl mx-auto leading-relaxed">Encontre carros, motos e imóveis com condições especiais para funcionários.</p>
+</div>
+</section>
+<!-- 6. SEÇÃO "COMO FUNCIONA?" -->
+<section class="w-full py-16 lg:py-24 bg-white border-y border-[#E5E7EB]" id="como-funciona"><div class="max-w-[1200px] mx-auto px-6 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-14 lg:mb-16">
+<h2 class="text-[28px] lg:text-[32px] font-bold tracking-tight text-[#171717] mb-2.5">Como funciona?</h2>
+<p class="text-[15px] text-[#666666]">É simples: cadastre-se, encontre sua oportunidade e faça sua oferta.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+<!-- 01 -->
+<div class="group flex flex-col items-start bg-white p-8 rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-md hover:border-slate-300 transition-all duration-300 min-h-[240px]">
+<div class="w-full flex items-center justify-between mb-6">
+<span class="text-[36px] font-extrabold text-[#CC092F] leading-none tracking-tight">01</span>
+<div class="w-11 h-11 rounded-xl bg-red-50 flex items-center justify-center text-[#CC092F]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+<circle cx="9" cy="7" r="4"></circle>
+<line x1="19" x2="19" y1="8" y2="14"></line>
+<line x1="22" x2="16" y1="11" y2="11"></line>
+</svg>
+</div>
+</div>
+<h3 class="text-[15px] font-bold uppercase tracking-wider text-[#171717] mb-2">Cadastre-se com seu e-mail corporativo</h3>
+<p class="text-[14px] text-[#666666] leading-relaxed">
+        Valide suas credenciais e acesse as oportunidades exclusivas.
+      </p>
+</div>
+<!-- 02 -->
+<div class="group flex flex-col items-start bg-white p-8 rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-md hover:border-slate-300 transition-all duration-300 min-h-[240px]">
+<div class="w-full flex items-center justify-between mb-6">
+<span class="text-[36px] font-extrabold text-[#CC092F] leading-none tracking-tight">02</span>
+<div class="w-11 h-11 rounded-xl bg-red-50 flex items-center justify-center text-[#CC092F]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+<path d="M11 8v6"></path>
+<path d="M8 11h6"></path>
+</svg>
+</div>
+</div>
+<h3 class="text-[15px] font-bold uppercase tracking-wider text-[#171717] mb-2">ENCONTRE SUA OPORTUNIDADE</h3>
+<p class="text-[14px] text-[#666666] leading-relaxed">
+        Explore carros, motos e imóveis disponíveis na plataforma.
+      </p>
+</div>
+<!-- 03 -->
+<div class="group flex flex-col items-start bg-white p-8 rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-md hover:border-slate-300 transition-all duration-300 min-h-[240px]">
+<div class="w-full flex items-center justify-between mb-6">
+<span class="text-[36px] font-extrabold text-[#CC092F] leading-none tracking-tight">03</span>
+<div class="w-11 h-11 rounded-xl bg-red-50 flex items-center justify-center text-[#CC092F]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14 2 14 8 20 8"></polyline>
+<line x1="16" x2="8" y1="13" y2="13"></line>
+<line x1="16" x2="8" y1="17" y2="17"></line>
+<polyline points="10 9 9 9 8 9"></polyline>
+</svg>
+</div>
+</div>
+<h3 class="text-[15px] font-bold uppercase tracking-wider text-[#171717] mb-2">FAÇA SUA OFERTA</h3>
+<p class="text-[14px] text-[#666666] leading-relaxed">
+        Escolha sua oportunidade e envie sua proposta.
+      </p>
+</div>
+</div>
+</div></section>
+<!-- 7. MELHORES CONDIÇÕES (SEÇÃO REFINADA UI/UX CARBUY 3×2) -->
+<section class="relative w-full py-20 px-6 bg-[#CC092F] text-white" style="background: #CC092F !important;">
+<div class="max-w-[1240px] mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<h2 class="text-white font-extrabold text-[28px] lg:text-[34px] tracking-tight leading-tight">As melhores condições você encontra aqui!</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Benefício 1: Financiamento -->
+<div class="bg-white/[0.07] hover:bg-white/[0.12] rounded-xl p-7 border border-white/10 text-center flex flex-col items-center justify-center transition-all min-h-[210px]">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white mb-4">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<h3 class="text-white font-bold text-[18px] mb-2 tracking-tight">Financiamento</h3>
+<p class="text-white/85 text-[14px] leading-relaxed max-w-[280px]">Taxas e prazos especiais para funcionários.</p>
+</div>
+<!-- Benefício 2: Segurança -->
+<div class="bg-white/[0.07] hover:bg-white/[0.12] rounded-xl p-7 border border-white/10 text-center flex flex-col items-center justify-center transition-all min-h-[210px]">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white mb-4">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<h3 class="text-white font-bold text-[18px] mb-2 tracking-tight">Segurança</h3>
+<p class="text-white/85 text-[14px] leading-relaxed max-w-[280px]">Plataforma segura e veículos com laudo cautelar.</p>
+</div>
+<!-- Benefício 3: Facilidade -->
+<div class="bg-white/[0.07] hover:bg-white/[0.12] rounded-xl p-7 border border-white/10 text-center flex flex-col items-center justify-center transition-all min-h-[210px]">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white mb-4">
+<span class="material-symbols-outlined text-[24px]">devices</span>
+</div>
+<h3 class="text-white font-bold text-[18px] mb-2 tracking-tight">Facilidade</h3>
+<p class="text-white/85 text-[14px] leading-relaxed max-w-[280px]">Ótimos negócios de onde estiver e em qualquer dispositivo.</p>
+</div>
+<!-- Benefício 4: Comodidade -->
+<div class="bg-white/[0.07] hover:bg-white/[0.12] rounded-xl p-7 border border-white/10 text-center flex flex-col items-center justify-center transition-all min-h-[210px]">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white mb-4">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<h3 class="text-white font-bold text-[18px] mb-2 tracking-tight">Comodidade</h3>
+<p class="text-white/85 text-[14px] leading-relaxed max-w-[280px]">Frete para todo o Brasil, documentação, vistoria, financiamento e muito mais.</p>
+</div>
+<!-- Benefício 5: Suporte -->
+<div class="bg-white/[0.07] hover:bg-white/[0.12] rounded-xl p-7 border border-white/10 text-center flex flex-col items-center justify-center transition-all min-h-[210px]">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white mb-4">
+<span class="material-symbols-outlined text-[24px]">headset_mic</span>
+</div>
+<h3 class="text-white font-bold text-[18px] mb-2 tracking-tight">Suporte</h3>
+<p class="text-white/85 text-[14px] leading-relaxed max-w-[280px]">Equipe de atendimento para lhe auxiliar, antes e após a compra.</p>
+</div>
+<!-- Benefício 6: Presença -->
+<div class="bg-white/[0.07] hover:bg-white/[0.12] rounded-xl p-7 border border-white/10 text-center flex flex-col items-center justify-center transition-all min-h-[210px]">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white mb-4">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<h3 class="text-white font-bold text-[18px] mb-2 tracking-tight">Presença</h3>
+<p class="text-white/85 text-[14px] leading-relaxed max-w-[280px]">Atuação em todo o território nacional.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. CTA FINAL DE CONVERSÃO -->
+<section class="w-full py-20 bg-white border-t border-slate-200">
+<div class="max-w-[1440px] mx-auto px-6 text-center">
+<div class="max-w-2xl mx-auto flex flex-col items-center">
+<h2 class="text-[28px] font-bold tracking-tight text-[#171717] mb-2.5">Pronto para aproveitar as oportunidades?</h2>
+<p class="text-[15px] text-[#666666] mb-8">Confira os veículos e imóveis disponíveis para você funcionário.</p>
+<a class="inline-flex items-center justify-center gap-2.5 h-[50px] px-9 rounded-[8px] bg-[#CC092F] hover:bg-[#8F0718] text-white font-bold text-[14px] tracking-wide transition-all shadow-sm active:scale-[0.98]" href="#login-section" onclick="document.getElementById('login-section').scrollIntoView({behavior:'smooth'}); return false;"><span class="">ACESSE A PLATAFORMA</span></a>
+</div>
+</div>
+</section>
+</main>
+<!-- 9. FOOTER INSTITUCIONAL & SUPORTE -->
+<footer class="w-full bg-[#171717] text-[#D4D4D4] border-t border-[#262626] py-8">
+  <div class="max-w-[1440px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-[#2E2E2E]">
+    <div class="inline-flex items-center">
+      <img alt="CarBuy" class="h-7 w-auto object-contain block select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKhbHIs_vDhTWCZCKS7i8hH1e1pClPXJGJtRldF4ne8GlCRf2DSOo4bCAzDlFBedoipt0YWroMiGz2hMVGAidrmvVHiMxJLHM9yF-j4TS2acgeI2hmW8W0eOHETWPW2L6vwGmZ5cGeIphB1eXRLS_h7IR4av83MmE3lBBjpLS6xeoW78aJTw7FAF-iNeuv7tQm3I9tJVeKGWTJRcI6fiEtXt11vNHy1c-xvBEt34xlxMtvojyBfoM4X-bJqQlKpQg4LKE">
+      <span class="h-6 w-[1px] bg-white/20 mx-4 block shrink-0" aria-hidden="true"></span>
+      <img alt="Banco Bradesco" class="h-[22px] w-auto object-contain block select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG1IazCqymEAnjlby5xuz1ycW5myY5UXMaYcUZ5ilbOOpj5rKOEuvgFBIYnPdYd-dcYtwoCavpIv_zrrVGizimC7Li3GHRIDcplUDp1PL_R4vWMbehCsH7wg27342ab6kGU5Bs2npLNBkI5fOA0RQMDibKEj8k9ms9zL31vFZx9vOPCd_0Ey1b26u_tWoikVpim-_3kPM1p9gYKcG6CmwIeBQxrrBxd8x0rw-yxz28GRNMcKcfkqlBSnPwQr_AqmconUQ">
+    </div>
+    <nav class="flex flex-wrap items-center justify-center gap-6 text-[13px] text-[#A3A3A3]">
+      <a class="hover:text-white transition-colors" href="#">Perguntas Frequentes</a>
+      <a class="hover:text-white transition-colors" href="#">Privacidade</a>
+      <a class="hover:text-white transition-colors" href="#">LGPD</a>
+      <a class="hover:text-white transition-colors" href="#">Contato</a>
+    </nav>
+  </div>
+  <div class="max-w-[1440px] mx-auto px-6 lg:px-12 pt-6 text-center text-[12px] text-[#737373]">
+    <p class="">© 2026 Carbuy &amp; Banco Bradesco S.A. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<!-- Botão Flutuante Suporte WhatsApp -->
+<a aria-label="Dúvidas? Fale conosco" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 bg-[#16A34A] hover:bg-[#15803D] text-white px-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all font-semibold text-[13px] tracking-wide focus:outline-none active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">DÚVIDAS? Fale conosco</span>
+</a>
+
+
+
+
+
+
+</body></html>
